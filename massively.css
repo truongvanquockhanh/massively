@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
+html {
+    font-size: 16px;
+}
+* {
+    font-family: "Merriweather", Georgia, serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1370px;
+}
+/* haeder */
+#header {
+    padding: 10rem 0;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+#header h1 {
+    font-size: 5rem;
+}
+#header p {
+    font-size: 2rem;
+}
+#header p a {
+    margin-bottom: 10px;
+    text-decoration: underline 1px dotted  white;
+    color: white;
+}
+#header a:hover {
+    text-decoration: none;
+    color: #18bfef;
+}
+#down {
+    margin-left: auto;
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 100px;
+}
+.massively {
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 1px solid white;
+}
+.massively:hover {
+    border: 1px solid #18bfef;
+}
+/* nav */
+#nav {
+    display: grid;
+    grid-template-columns: 17% 17% 17% auto;
+    color: white;
+    background-color: rgb(106, 104, 98);
+    line-height: 4em;
+}
+
+#nav a {
+    text-decoration: none;
+}
+#linkmassively {
+    background-color: white;
+    color: black;
+}
+#linkmassively:hover {
+    color: #18bfef;
+}
+#nav .logo {
+    text-align: right;
+}
+.logo a {
+    color: white;
+    padding: 0 20px;
+    font-size: 1.8rem;
+}
+.logo a:hover {
+    color: #18bfef;
+}
+.link {
+    text-align: center;
+    color: white;
+}
+.link:hover {
+    background-color: rgb(156, 155, 153);
+}
+.link:active {
+    background-color: white;
+    color: black;
+}
+.menu {
+    display: none;
+    /* position: fixed;
+    right: 5%;
+    top: 5%;
+    display: inline-block;
+    max-width: 80%;
+    z-index: 3; */
+}
+.menudown {
+    display: none;
+}
+.menu:hover .menudown {
+    display: block;
+}
+.menudown a {
+    text-decoration: none;
+    color: black;
+    line-height: 3rem;
+}
+.menudown a:hover {
+    background-color: white;
+    color: #18bfef;
+}
+/* main */
+.main {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+}
+.main a {
+    text-decoration: none;
+    color: black;
+}
+.main a:hover {
+    color: #18bfef;
+}
+.main p {
+    font-size: 1.4em;
+}
+
+/* datetimr */
+.centerhr {
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+hr {
+    border-top:1px solid rgb(214, 211, 211) ;
+    width: 30%;
+}
+.hr1 {
+    position: absolute;
+    top: 6rem;
+    left: 10%;
+}
+.hr2 {
+    position: absolute;
+    top: 6rem;
+    right: 10%;
+}
+/* main1 */
+.title {
+    padding-bottom: 5rem;
+    grid-column: 1/3;
+    width: 100%;
+    text-align: center;
+}
+.title h2 {
+    font-size: 4em;
+    line-height: 1.2em;
+    word-spacing: 17px;
+    margin-bottom: 30px;
+}
+
+.image01 {
+    display: block;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    max-width: 1200px;
+}
+/* mainother */
+.selection {
+    margin: 0;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid rgb(202, 202, 216);
+    max-width: 685px;
+}
+.selection img {
+    width: 100%;
+    max-width: 680px;
+}
+.selection div {
+    text-align: justify;
+    max-width: 680px;
+    margin: 40px 0;
+}
+.selection h2 {
+    font-size: 2em;
+}
+.button {
+    padding: 20px 30px;
+    border: 2px solid black;
+}
+.button:hover {
+    border: 2px solid #18bfef;
+}
+
+#date {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* next page */
+.page {
+    margin: 0;
+    grid-column: 1/3;
+    display: flex;
+    margin: 50px auto;
+}
+.page a {
+    color: rgb(116, 100, 100);
+    border: 1px solid rgba(151, 154, 158, 0.74);
+    padding: 10px;
+    line-height: normal;
+}
+
+/* contact */
+.address {
+    background-color: rgb(216, 213, 207);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+form {
+    /* display: grid; */
+    margin: 20px 0 20px 70px;
+    grid-row: 1/5;
+    color: rgb(121, 116, 116);
+}
+label {
+    display: block;
+}
+input[type=text], input[type=email], textarea {
+    display: block;
+    width: 80%;
+    background-color: rgb(216, 213, 207);
+    border: 1px solid rgb(181, 182, 176);
+    margin: 10px 0;
+}
+input[type=text], input[type=email] {
+    height: 3em;
+}
+input[type=submit] {
+    height: 3em;
+    padding:10px 30px;
+    background-color: rgb(216, 213, 207);
+}
+
+.contact {
+    color: rgb(121, 116, 116);
+    padding: 50px;
+    border: 1px solid rgb(181, 182, 176);
+}
+.contact a {
+    text-decoration: underline 1px dotted rgb(121, 116, 116);
+    color: rgb(121, 116, 116);
+}
+.address div {
+    display: flex
+}
+.logocontact a{
+    text-decoration: none;
+    padding: 0 10px;
+}
+.left {
+    flex: 50%;
+    width: 100%;
+}
+.right {
+    flex: 50%;
+    max-width: 100%;
+    overflow: visible;
+}
+.contact a:hover {
+    color: #18bfef;
+}
+/* footer */
+#footer {
+    color: rgb(121, 116, 116);
+    margin: 20px 0;
+    font-size: 3em;
+    text-align: center;   
+}
+#footer a {
+    text-decoration: underline 1px dotted rgb(121, 116, 116);
+    color: rgb(121, 116, 116);
+}
+#footer a:hover {
+    color: #18bfef;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+    .container {
+        width: 100%;
+    }
+    #nav {
+        display: none;
+    }
+    .selection {
+        grid-column: 1/3;
+    }
+    .address {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    * {
+        font-size: 10px;
+    }
+    .number {
+        display: none;
+    }
+    #header {
+        line-height: 8rem;
+    }
+    #down {
+        display: none;
+    }
+    .hr1, .hr2 {
+        top: 8.5rem;
+        width: 20%;
+    }
+    .title {
+        line-height: 5rem;
+    }
+    .divtt {
+        margin: 0;
+        max-width: 100%;
+        padding: 0 40px 40px 40px;
+    }
+    .divtt img {
+        padding: 5rem 0;
+        width: 100%;
+        margin: 0;
+    }
+    .menu {
+        display: inline-block;
+        position: fixed;
+        right: 5%;
+        top: 5%;
+        display: inline-block;
+        max-width: 80%;
+        z-index: 3;
+        background-color: rgb(221, 216, 210);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    /* #next {
+        display: inline;
+    } */
+}
