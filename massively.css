@@ -22,49 +22,86 @@ body {
     max-width: 1370px;
 }
 /* haeder */
-#header {
+.header {
     padding: 10rem 0;
     color: white;
     text-align: center;
     line-height: 80px;
 }
-#header h1 {
+.this h1 {
     font-size: 5rem;
 }
-#header p {
+.this p {
     font-size: 2rem;
 }
-#header p a {
+.this p a {
     margin-bottom: 10px;
     text-decoration: underline 1px dotted  white;
     color: white;
 }
-#header a:hover {
+#header1 a:hover {
     text-decoration: none;
     color: #18bfef;
 }
 #down {
+    font-size: 2rem;
+    border: 3px solid white;
+    padding:  1rem 1.2rem;
+    border-radius: 55%;
     margin-left: auto;
     margin-left: auto;
     text-decoration: none;
-    font-size: 100px;
+    
 }
-.massively {
+#down:hover {
+    border: 3px solid #18bfef;
+}
+.massively a {
+    font-size: 3rem;
     color: white;
     text-decoration: none;
-    padding: 20px 40px;
+    padding: 30px 60px;
     border: 1px solid white;
 }
-.massively:hover {
+.massively a:hover {
     border: 1px solid #18bfef;
+}
+
+/* scroll header */
+.disthis  {
+    animation-name: cuonx;
+    animation-duration: 4s;
+    visibility: visible;
+}
+.dismassively {
+    visibility: hidden;
+}
+.massivelydown {
+    animation-name: cuonx;
+    animation-duration: 4s;
+    visibility: visible;
+}
+.thisdown {
+    visibility: hidden;
+}
+@keyframes cuonx {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /* nav */
 #nav {
     display: grid;
-    grid-template-columns: 17% 17% 17% auto;
+    grid-template-columns: 22% 22% 22% auto;
     color: white;
     background-color: rgb(106, 104, 98);
     line-height: 4em;
+    font-size: 1rem;
 }
 
 #nav a {
@@ -79,11 +116,11 @@ body {
 }
 #nav .logo {
     text-align: right;
+    font-size: 1.2rem;
 }
-.logo a {
+#nav .logo a {
     color: white;
     padding: 0 20px;
-    font-size: 1.8rem;
 }
 .logo a:hover {
     color: #18bfef;
@@ -92,36 +129,70 @@ body {
     text-align: center;
     color: white;
 }
-.link:hover {
+#nav .link:hover {
     background-color: rgb(156, 155, 153);
 }
 .link:active {
     background-color: white;
     color: black;
 }
-.menu {
-    display: none;
-    /* position: fixed;
-    right: 5%;
-    top: 5%;
-    display: inline-block;
-    max-width: 80%;
-    z-index: 3; */
+/* menu */
+#menumedia {
+    display:none;
 }
-.menudown {
-    display: none;
+#menu {
+    cursor: pointer;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 1;
 }
-.menu:hover .menudown {
-    display: block;
-}
-.menudown a {
-    text-decoration: none;
+#menudown {
+    width:  0;
+    transition: 0.8s;
+    position:  fixed;
     color: black;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 3;
+}
+#close {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.menuformobile {
+    margin-top: 6rem;
+    margin-left: 5rem;
+}
+.menuformobile hr {
+    width: 100%;
+}
+.menuformobile b, .menuformobile a {
+    font-size: 1rem;
+}
+#menudown a {
+    color: black;
+    text-decoration: none;
     line-height: 3rem;
 }
-.menudown a:hover {
-    background-color: white;
+
+#menudown a:hover {
     color: #18bfef;
+}
+
+.menuformobile .logo {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    flex: 25%;
+}
+.menuformobile .logo a {
+    width: 100%;
 }
 /* main */
 .main {
@@ -283,6 +354,10 @@ input[type=submit] {
     text-decoration: none;
     padding: 0 10px;
 }
+#break {
+    overflow: hidden;
+    word-wrap: break-word;
+}
 .left {
     flex: 50%;
     width: 100%;
@@ -310,7 +385,7 @@ input[type=submit] {
     color: #18bfef;
     text-decoration: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     html {
         font-size: 8px;
     }
@@ -321,6 +396,8 @@ input[type=submit] {
         display: none;
     }
     .selection {
+        margin-left: auto;
+        margin-right: auto;
         grid-column: 1/3;
     }
     .address {
@@ -356,16 +433,8 @@ input[type=submit] {
         width: 100%;
         margin: 0;
     }
-    .menu {
-        display: inline-block;
-        position: fixed;
-        right: 5%;
-        top: 5%;
-        display: inline-block;
-        max-width: 80%;
-        z-index: 3;
-        background-color: rgb(221, 216, 210);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    #menumedia {
+        display: inline-block; 
     }
     
     /* #next {

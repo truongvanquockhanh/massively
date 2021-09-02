@@ -9,15 +9,47 @@
 </head>
 
 <body>
-<div class="container">
+
+<!-- menu -->
+<div id="menumedia">
+    <div id="menu">
+        <b class="fas fa-bars"> MENU</b>
+    </div>
+    <div id="menudown">
+        <b class="fas fa-times" id="close"></b>
+        <div class="menuformobile">
+            <div><a href="massively.html" ><b>THIS IS MASSIVELY</b></a></div>
+            <hr>
+            <div><a href="#" ><b>GENERIC PAGE</b></a></div>
+            <hr>
+            <div><a href="#" ><b>ELEMENTS REFENCE</b></a></div>
+            <hr>
+            <div class="logo">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-github"></a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="container" id="over">
  <!--header --> 
- <header id="header">
-     <h1>THIS IS<br> MASSIVELY</h1>
-     <p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="#">@ajlkn</a> for <a href="#">HTML5up</a> <br>
-        and released for free under the <a href="#">Creative Commons license.</a></p>
-    <a  class="far fa-arrow-alt-circle-down" id="down"></a>
-    <br>
-    <a href="#" class="massively">MASSIVELY</a>    
+ <header class="header">
+     <div id="header1" class="this disthis" >
+        <h1>THIS IS<br> MASSIVELY</h1>
+        <p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="#">@ajlkn</a> for <a href="#">HTML5up</a> <br>
+           and released for free under the <a href="#">Creative Commons license.</a></p>
+        <a  class="fas fa-arrow-down" id="down"></a>
+        <br>
+     </div>
+
+     <div class="massively dismassively" id="header2">
+        <a href="#" >MASSIVELY</a> 
+     </div>
+       
 </header>
 
  <!-- nav -->
@@ -33,23 +65,8 @@
     </div>
  </nav>
 
- <!-- menu -->
- <div class="menu">
-    <div>
-        <b class="fas fa-bars"> MENU</b>
-    </div>
-    <div class="menudown">
-        <div><a href="massively.html" class="link"><b>THIS IS MASSIVELY</b></a></div>
-        <div><a href="#" class="link"><b>GENERIC PAGE</b></a></div>
-        <div><a href="#" class="link"><b>ELEMENTS REFENCE</b></a></div>
-        <div class="logo">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-github"></a>
-        </div>
-    </div>
- </div>
+
+ 
 
  <!-- main -->
  <div class="main">
@@ -204,7 +221,7 @@
     </div>
     <div class="contact">
         <h4 class="left">EMAIL</h4>
-        <a href="#" class="right">truongvanquockhanh@gmail.com</a>
+        <a href="#" class="right" id="break">truongvanquockhanh@gmail.com</a>
     </div>
     <div class="contact">
         <h4 class="left">SOCIAL</h4>
@@ -228,5 +245,10 @@
     </div>
 </footer>
 </div>
+
+<!-- script -->
+    <script src="openMenu.js"></script>
+    <script src="closeMenu.js"></script>
+    <script src="header.js"></script>
 </body>
 </html>
